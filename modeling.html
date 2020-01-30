@@ -63,38 +63,43 @@
 		font-weight: bold;
 	}
 
-		.close:hover,
-		.close:focus {
-			color: #999;
-			text-decoration: none;
-			cursor: pointer;
-		}
+	.close:hover,
+	.close:focus {
+		color: #999;
+		text-decoration: none;
+		cursor: pointer;
+	}
 
-	.mySlides {
+	.mySlidesb {
 		display: none;
 	}
+
+	.mySlidesa {
+		display: none;
+	}
+
 
 	.cursor {
 		cursor: pointer;
 	}
 
 	/* Next & previous buttons */
-	.prev,
-	.next {
-		cursor: pointer;
-		position: absolute;
-		top: 50%;
-		width: auto;
-		padding: 16px;
-		margin-top: -50px;
-		color: white;
-		font-weight: bold;
-		font-size: 20px;
-		transition: 0.6s ease;
-		border-radius: 0 3px 3px 0;
-		user-select: none;
-		-webkit-user-select: none;
-	}
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
 
 	/* Position the "next button" to the right */
 	.next {
@@ -196,11 +201,11 @@
 						<h2>Algonquin College A Building</h2>
 						<p>
 							This project was done as part of one of our classes as groups. The main purpose of this project was to give the ability to transform a 2D CAD drawing into a 3D BIM model
-							and increase the ability to collaborate on a project. </br>
+							and increase the ability to collaborate on a project. <br />
 							My group's section of the building has 2 storeys above grade and a basement. There are three entrances and staircases. On the ground floor, there is a Beauty and Spa Salon that covers coiffeur, mani-pedi, facial care and massage rooms. 
-							There are classrooms and offices on the second floor.</br>
+							There are classrooms and offices on the second floor.<br />
 							For modeling, AutoCAD files and Point Cloud file that was attached to Revit was used as references. The point cloud was showing that the building was located slightly different than the CAD drawings. 
-							Thus, the model was placed in line with point cloud. The collaboration was done through<b> BIM 360</b> and <b>worksets</b>. The levels in Revit file wasn’t matching the AutoCAD levels. So, we adjusted the levels. </br>
+							Thus, the model was placed in line with point cloud. The collaboration was done through<b> BIM 360</b> and <b>worksets</b>. The levels in Revit file wasn’t matching the AutoCAD levels. So, we adjusted the levels. <br />
 							<b>I was responsible of the foundations, superstructure and floors.</b>
 						</p>
 						<div class="row">
@@ -222,6 +227,7 @@
 							<div class="column">
 								<img src="images/mp1_pic_03.jpg" style="width:100%" onclick="openModalb();currentSlideb(6)" class="hover-shadow cursor">
 							</div>
+						</div>
 
 						<div id="myModalb" class="modal">
 							<span class="close cursor" onclick="closeModalb()">&times;</span>
@@ -274,6 +280,8 @@
 								<div class="column">
 									<img class="demo cursor" src="images/mp1_pic_03.jpg" style="width:100%" onclick="currentSlideb(6)">
 								</div>
+							</div>
+
 						</div>
 
 						<script>
@@ -346,7 +354,7 @@
 							<div class="column">
 								<img src="images/mp2_pic_07.jpg" style="width:100%" onclick="openModala();currentSlidea(8)" class="hover-shadow cursor">
 							</div>
-
+						</div>
 						<div id="myModala" class="modal">
 							<span class="close cursor" onclick="closeModala()">&times;</span>
 							<div class="modal-content">
@@ -411,6 +419,7 @@
 								<div class="column">
 									<img class="demo cursor" src="images/mp2_pic_07.jpg" style="width:100%" onclick="currentSlidea(8)">
 								</div>
+							</div>
 						</div>
 
 						<script>
