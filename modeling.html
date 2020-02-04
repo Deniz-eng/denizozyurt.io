@@ -245,7 +245,6 @@
 									<div class="numbertext">3 / 6</div>
 									<img src="images/mp1_pic_06.jpg" style="width:100%">
 								</div>
-
 								<div class="mySlidesb">
 									<div class="numbertext">4 / 6</div>
 									<img src="images/mp1_pic_05.jpg" style="width:100%">
@@ -307,17 +306,17 @@
 							function showSlidesb(n) {
 								var b;
 								var slidesb = document.getElementsByClassName("mySlidesb");
-								var dotsa = document.getElementsByClassName("demo");
+								var dotsb = document.getElementsByClassName("demo");
 								if (n > slidesb.length) { slideIndexb = 1 }
 								if (n < 1) { slideIndexb = slidesb.length }
 								for (b = 0; b < slidesb.length; b++) {
 									slidesb[b].style.display = "none";
 								}
-								for (b = 0; b < dotsa.length; b++) {
-									dotsa[b].className = dotsa[b].className.replace(" active", "");
+								for (b = 0; b < dotsb.length; b++) {
+									dotsb[b].className = dotsb[b].className.replace(" active", "");
 								}
 								slidesb[slideIndexb - 1].style.display = "block";
-								dotsa[slideIndexb - 1].className += " active";
+								dotsb[slideIndexb - 1].className += " active";
 							}
 						</script>
 
@@ -362,7 +361,6 @@
 									<div class="numbertext">1 / 8</div>
 									<img src="images/mp2_pic_01.jpg" style="width:100%">
 								</div>
-
 								<div class="mySlidesa">
 									<div class="numbertext">2 / 8</div>
 									<img src="images/mp2_pic_08.jpg" style="width:100%">
@@ -375,7 +373,6 @@
 									<div class="numbertext">4 / 8</div>
 									<img src="images/mp2_pic_03.jpg" style="width:100%">
 								</div>
-
 								<div class="mySlidesa">
 									<div class="numbertext">5 / 8</div>
 									<img src="images/mp2_pic_04.jpg" style="width:100%">
