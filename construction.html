@@ -150,6 +150,28 @@
     .hover-shadow:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 200px;
+        z-index: 99;
+        font-size: 50px;
+        border: none;
+        outline: none;
+        background-color: none;
+        color: #D6D6D6;
+        cursor: pointer;
+        padding: 4px;
+        border-radius: 4px;
+
+ 
+        }
+
+    #myBtn:hover {
+        background-color: #D6D6D6;
+        }
+
 </style>
 <html>
 
@@ -162,6 +184,28 @@
 </head>
 
 <body class="is-preload">
+	<button onclick="topFunction()" id="myBtn" title="Go to top">&#8686;</button>
+	<script>
+	//Get the button
+		var mybutton = document.getElementById("myBtn");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+				}
+		}
+
+	// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
 
     <!-- Wrapper -->
     <div id="wrapper">
