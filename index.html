@@ -6,17 +6,17 @@
 -->
 <style>
 
+button {
+    width: 200px;
+    height: 100px;
+    position: relative;
+}
 
-	#myBtn {
-		display: none;
-		position:fixed;
-		bottom: 20px;
-		right: 20px;
-		z-index: 99;
-		color: #ffffff;
-		cursor: pointer;
-		padding: 4px;
-	}
+.bottom-right {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
 
 </style>
 <html>
@@ -30,7 +30,8 @@
 </head>
 <body class="is-preload">
 
-	<button onclick="topFunction()" id="myBtn" title="Go to top">&#xf35b;</button>
+	<button type="button" onclick="topFunction()" title="Go to top">&#xf35b;</button>
+	
 	<script>
 		//Get the button
 		var mybutton = document.getElementById("myBtn");
