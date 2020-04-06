@@ -4,7 +4,6 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
 <style>
 
 
@@ -30,108 +29,119 @@
   background-color: #D6D6D6;
 }
 </style>
-	<head>
-		<title>Generative Design</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<html>
+
+<head>
+	<title>Generative Design</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
 
 	<button onclick="topFunction()" id="myBtn" title="Go to top">&#8686;</button>
 	<script>
-	//Get the button
+		//Get the button
 		var mybutton = document.getElementById("myBtn");
 
-	// When the user scrolls down 20px from the top of the document, show the button
-		window.onscroll = function() {scrollFunction()};
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function () { scrollFunction() };
 
 		function scrollFunction() {
 			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 				mybutton.style.display = "block";
 			} else {
 				mybutton.style.display = "none";
-				}
+			}
 		}
 
-	// When the user clicks on the button, scroll to the top of the document
+		// When the user clicks on the button, scroll to the top of the document
 		function topFunction() {
 			document.body.scrollTop = 0;
 			document.documentElement.scrollTop = 0;
 		}
 	</script>
 
-		<!-- Wrapper -->
-		<div id="wrapper">
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-			<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="logo">Deniz Ozyurt</a>
-			</header>
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="logo">Deniz Ozyurt</a>
+		</header>
 
-			<!-- Nav -->
-			<nav id="nav">
-				<ul class="links">
-					<li><a href="index.html">This is Me</a></li>
-					<li><a href="modeling.html">Modeling</a></li>
-					<li><a href="construction.html">Construction</a></li>
-					<li><a href="reporting.html">Reporting</a></li>
-					<li class="active"><a href="generative design.html">Generative Design</a></li>
-					<li><a href="generic.html">Resume</a></li>
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li><a href="index.html">This is Me</a></li>
+				<li><a href="modeling.html">Modeling</a></li>
+				<li><a href="construction.html">Construction</a></li>
+				<li><a href="reporting.html">Reporting</a></li>
+				<li class="active"><a href="generative design.html">Generative Design</a></li>
+				<li><a href="generic.html">Resume</a></li>
 
-				</ul>
-				<ul class="icons">
-					<li><a href="index.html#footer" class="icon brands fa"><span> &#9742; &#9993 </span></a></li>
-					<li><a href="https://linkedin.com/in/denizozyurt" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
-		            <li><a href="https://github.com/Deniz-eng" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-				</ul>
-			</nav>
+			</ul>
+			<ul class="icons">
+				<li><a href="index.html#footer" class="icon brands fa"><span> &#9742; &#9993 </span></a></li>
+				<li><a href="https://linkedin.com/in/denizozyurt" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+				<li><a href="https://github.com/Deniz-eng" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+			</ul>
+		</nav>
 
-			<!-- Main -->
-			<div id="main">
+		<!-- Main -->
+		<div id="main">
 
-				<!-- Post -->
-				<section class="post">
-					<header class="major">
-						<h1>Generative Design</h1>
-					</header>
+			<!-- Post -->
+			<section class="post">
+				<header class="major">
+					<h1>Generative Design</h1>
+				</header>
 
-					<!-- Text stuff -->
-					<div id="main">
-						<section id="dyn">
-							<h2>Using nodes</h2>
-							<h3> Adaptive Curtain Panel Wall Design with Dynamo </h3>
-							<a class="image fit"><img src="images/adaptive_frame.jpg" ></a>
-							<p>  Adaptive curtain panel walls can be done by using Revit. But there's also other ways. 
-								Such as using Dynamo to create nodes and placing the adaptive curtain panel family ; </p>
-							<a class="image fit"><img src="images/adaptive_dyn.jpg"> 
-							
-							    
-						</section>
+				<!-- Text stuff -->
+				<div id="main">
+					<section id="dyn">
+						<h2>Using nodes</h2>
+						<h3> Adaptive Curtain Panel Wall Design with Dynamo </h3>
+						<a class="image fit"><img src="images/adaptive_frame.jpg"></a>
+						<p>
+							Adaptive curtain panel walls can be done by using Revit. But there's also another way.
+							Such as using Dynamo and its nodes and placing the adaptive curtain panel family ;
+						</p>
+						<a class="image fit"><img src="images/adaptive_dyn.jpg"></a>
+					</section>
 
-					
-					</div>
-				</section>
+					<section id="pyt">
+						<h2>Using scripts</h2>
+						<h3> Creating Floors and Walls with Dynamo & Python </h3>
+						<a class="image fit"><img src="images/pyt_02.png"></a>
+						<p>
+							With some basic scripting in Dynamo's Python Script Node, creating floors and exterior walls can be automated.
+							Using the coordinates of our project parcel or site as the main input, the floor and the walls are generated automatically.
+						</p>
+						<a class="image fit"><img src="images/pyt_01.png"></a>
+					</section>
+				</div>
+			</section>
 
 
-				<ul style="text-align:center; text-emphasis-color:black"> &#9742; (613) 889-2582 || &#9993 denizozyurt@gmail.com </ul>
+			<ul style="text-align:center; text-emphasis-color:black"> &#9742; (613) 889-2582 || &#9993 denizozyurt@gmail.com </ul>
 
 
-			</div>
-			<!-- Copyright -->
-			<div id="copyright">
-				<ul><li>&copy;</li><li>Design:HTML5 UP</li></ul>
-			</div>
 		</div>
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul><li>&copy;</li><li>Design:HTML5 UP</li></ul>
+		</div>
+	</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-	</body>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
 </html>
