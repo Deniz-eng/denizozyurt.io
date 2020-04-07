@@ -150,6 +150,14 @@
     .hover-shadow:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
+	#myBtn {
+		display: none;
+		position: fixed;
+		bottom: 20px;
+		right: 0px;
+		z-index: 99;
+		color:white;
+	}
 
 </style>
 <html>
@@ -163,8 +171,8 @@
 </head>
 
 <body class="is-preload">
-    <ul class="actions">
-        <li><a onclick="topFunction()" id="myBtn" style="position:sticky"  class="button icon solid solo fa-arrow-up scrolly"></a> </li>
+    <ul class="actions" style="color:white">
+        <li><a onclick="topFunction()" id="myBtn" class="button icon solid solo fa-arrow-up scrolly"></a> </li>
     </ul>
 
     <script>
