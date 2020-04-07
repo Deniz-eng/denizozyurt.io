@@ -21,128 +21,127 @@
 </style>
 
 <html>
-<head>
-	<title>Reporting</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-</head>
-<body class="is-preload">
+	<head>
+		<title>Reporting</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-	<ul class="actions">
-		<li><a onclick="topFunction()" id="myBtn" style="background-color:white" class="button icon solid solo fa-arrow-up scrolly"></a> </li>
-	</ul>
+		<ul class="actions">
+			<li><a onclick="topFunction()" id="myBtn" class="button icon solid solo fa-arrow-up scrolly"></a><i class="icon-cog" style="color:black"></i> </li>
+		</ul>
 
-	<script>
+		<script>
 		//Get the button
-		var mybutton = document.getElementById("myBtn");
+			var mybutton = document.getElementById("myBtn");
 
 		// When the user scrolls down 20px from the top of the document, show the button
-		window.onscroll = function () { scrollFunction() };
+			window.onscroll = function () { scrollFunction() };
 
-		function scrollFunction() {
-			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-				mybutton.style.display = "block";
-			} else {
-				mybutton.style.display = "none";
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					mybutton.style.display = "block";
+				} else {
+					mybutton.style.display = "none";
+				}
 			}
-		}
 
 		// When the user clicks on the button, scroll to the top of the document
-		function topFunction() {
-			document.body.scrollTop = 0;
-			document.documentElement.scrollTop = 0;
-		}
-	</script>
+			function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+		</script>
 
-	<!-- Wrapper -->
-	<div id="wrapper">
+		<!-- Wrapper -->
+		<div id="wrapper">
 
-		<!-- Header -->
-		<header id="header">
-			<a href="index.html" class="logo">Deniz Ozyurt</a>
-		</header>
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo">Deniz Ozyurt</a>
+			</header>
 
-		<!-- Nav -->
-		<nav id="nav">
-			<ul class="links">
-				<li><a href="index.html">This is Me</a></li>
-				<li><a href="modeling.html">Modeling</a></li>
-				<li><a href="construction.html">Construction</a></li>
-				<li class="active"><a href="reporting.html">Reporting</a></li>
-				<li><a href="generative design.html">Generative Design</a></li>
-				<li><a href="generic.html">Resume</a></li>
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="index.html">This is Me</a></li>
+					<li><a href="modeling.html">Modeling</a></li>
+					<li><a href="construction.html">Construction</a></li>
+					<li class="active"><a href="reporting.html">Reporting</a></li>
+					<li><a href="generative design.html">Generative Design</a></li>
+					<li><a href="generic.html">Resume</a></li>
 
-			</ul>
-			<ul class="icons">
-				<li><a href="index.html#footer" class="icon brands fa"><span> &#9742; &#9993 </span></a></li>
-				<li><a href="https://linkedin.com/in/denizozyurt" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
-				<li><a href="https://github.com/Deniz-eng" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-			</ul>
-		</nav>
+				</ul>
+				<ul class="icons">
+					<li><a href="index.html#footer" class="icon brands fa"><span> &#9742; &#9993 </span></a></li>
+					<li><a href="https://linkedin.com/in/denizozyurt" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+					<li><a href="https://github.com/Deniz-eng" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+			</nav>
 
-		<!-- Main -->
-		<div id="main">
+			<!-- Main -->
+			<div id="main">
 
-			<!-- Post -->
-			<section class="post">
-				<header class="major">
-					<h1>Reporting</h1>
-				</header>
+				<!-- Post -->
 				<section class="post">
 					<header class="major">
-						<ul class="actions fit">
-							<li><a href="#data" class="button fit">Dashboard</a></li>
-							<li><a href="#clash" class="button fit">Clash Detection</a></li>
-							<li><a href="#4d" class="button fit">4D modeling</a></li>
-						</ul>
+						<h1>Reporting</h1>
 					</header>
+					<section class="post">
+						<header class="major">
+							<ul class="actions fit">
+								<li><a href="#data" class="button fit">Dashboard</a></li>
+								<li><a href="#clash" class="button fit">Clash Detection</a></li>
+								<li><a href="#4d" class="button fit">4D modeling</a></li>
+							</ul>
+						</header>
+					</section>
+					<!-- Text stuff -->
+					<div id="main">
+						<section id="data">
+							<h2>Dashboard</h2>
+							<p> First I used Dynamo to gather data from Revit Model. </p>
+							<a class="image fit"><img src="images/dash.JPG"></a>
+							<p> And with data it's possible to do a lot of things. Such as creating lists or Project Dashboard with Excel.  </p>
+							<a class="image fit"><img src="images/dash_01.JPG"></a>
+						</section>
+
+						<section id="clash">
+							<h2>Clash Detection</h2>
+							<p> Using Navisworks, running a clash test </p>
+							<a class="image fit"><img src="images/clash_01.png"></a>
+							<p> And reporting the results.  </p>
+							<a class="image fit"><img src="images/clash_02.png"></a>
+						</section>
+
+						<section id="4d">
+							<h2>4D Modeling</h2>
+							<p> 4D modeling means 3D model + time (schedule). Here is a simple animation I did with Navisworks.  </p>
+							<video controls width="720">
+								<source src="videos/navi_01.mp4" type="video/mp4">
+								<div style="border: 1px solid black; padding: 8px; ">
+									Sorry, your browser does not support the &lt;video&gt; tag used in this demo.
+								</div>
+							</video>
+
+						</section>
+
+					</div>
+
 				</section>
-				<!-- Text stuff -->
-				<div id="main">
-					<section id="data">
-						<h2>Dashboard</h2>
-						<p> First I used Dynamo to gather data from Revit Model. </p>
-						<a class="image fit"><img src="images/dash.JPG"></a>
-						<p> And with data it's possible to do a lot of things. Such as creating lists or Project Dashboard with Excel.  </p>
-						<a class="image fit"><img src="images/dash_01.JPG"></a>
-					</section>
 
-					<section id="clash">
-						<h2>Clash Detection</h2>
-						<p> Using Navisworks, running a clash test </p>
-						<a class="image fit"><img src="images/clash_01.png"></a>
-						<p> And reporting the results.  </p>
-						<a class="image fit"><img src="images/clash_02.png"></a>
-					</section>
+				<ul style="text-align:center; text-emphasis-color:black"> &#9742; (613) 889-2582 || &#9993 denizozyurt@gmail.com </ul>
 
-					<section id="4d">
-						<h2>4D Modeling</h2>
-						<p> 4D modeling means 3D model + time (schedule). Here is a simple animation I did with Navisworks.  </p>
-						<video controls width="720">
-							<source src="videos/navi_01.mp4" type="video/mp4">
-							<div style="border: 1px solid black; padding: 8px; ">
-								Sorry, your browser does not support the &lt;video&gt; tag used in this demo.
-							</div>
-						</video>
-
-					</section>
-
-				</div>
-
-			</section>
-
-			<ul style="text-align:center; text-emphasis-color:black"> &#9742; (613) 889-2582 || &#9993 denizozyurt@gmail.com </ul>
-
-
+			</div>
 		</div>
 		<!-- Copyright -->
 		<div id="copyright">
 			<ul><li>&copy;</li><li>Design: HTML5 UP</li></ul>
 		</div>
 
-	</div>
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
