@@ -5,32 +5,21 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <style>
-    #myBtn {
-        position: absolute;
-        clip-path: inset(50%);
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-        word-wrap: normal !important;
-        clip: rect(1px, 1px, 1px, 1px);
-        display: block;
-        top: 5px;
-        left: 5px;
-        z-index: 100000;
-        background-color: #eee;
-        padding: 15px 23px 14px;
-        width: auto;
-        height: auto;
-        text-decoration: none;
-        line-height: normal;
-        color: #444;
-        font-size: 1em;
-        clip: auto !important;
-    }
-
+	#myBtn {
+		display: none;
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		z-index: 99;
+		font-size: 50px;
+		border: none;
+		outline: none;
+		background-color: lightslategrey;
+		color: dimgray;
+		cursor: pointer;
+		padding: 4px;
+		border-radius: 4px;
+	}
     
 
 
@@ -45,7 +34,10 @@
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body class="is-preload">
-	<button onclick="topFunction()" id="myBtn" class="button icon solid solo fa-arrow-up"></button>
+	<ul class="actions">
+		<li><a onclick="topFunction()" id="myBtn" class="button icon solid solo fa-arrow-up scrolly" color="white"></a></li>
+	</ul>
+
 	<script>
 		//Get the button
 		var mybutton = document.getElementById("myBtn");
