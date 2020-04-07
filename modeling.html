@@ -156,8 +156,8 @@
 		font-size: 50px;
 		border: none;
 		outline: none;
-		background-color: none;
-		color: white;
+		background-color: white;
+		color: dimgray;
 		cursor: pointer;
 		padding: 4px;
 		border-radius: 4px;
@@ -177,23 +177,26 @@
 </head>
 <body class="is-preload">
 
-	<button onclick="topFunction()" id="myBtn" title="Go to top" class="button icon solid solo fa-arrow-up"></button>
+	<ul class="actions">
+		<li><a onclick="topFunction()" id="myBtn" class="button icon solid solo fa-arrow-up scrolly" color="white"></a></li>
+	</ul>
+
 	<script>
-	//Get the button
+		//Get the button
 		var mybutton = document.getElementById("myBtn");
 
-	// When the user scrolls down 20px from the top of the document, show the button
-		window.onscroll = function() {scrollFunction()};
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function () { scrollFunction() };
 
 		function scrollFunction() {
 			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 				mybutton.style.display = "block";
 			} else {
 				mybutton.style.display = "none";
-				}
+			}
 		}
 
-	// When the user clicks on the button, scroll to the top of the document
+		// When the user clicks on the button, scroll to the top of the document
 		function topFunction() {
 			document.body.scrollTop = 0;
 			document.documentElement.scrollTop = 0;
@@ -222,7 +225,7 @@
 			<ul class="icons">
 				<li><a href="index.html#footer" class="icon brands fa"><span> &#9742; &#9993 </span></a></li>
 				<li><a href="https://linkedin.com/in/denizozyurt" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
-                <li><a href="https://github.com/Deniz-eng" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				<li><a href="https://github.com/Deniz-eng" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 			</ul>
 		</nav>
 
@@ -237,279 +240,281 @@
 				<!-- Text stuff -->
 				<div id="main">
 					<section id="project1">
-					<h2>Algonquin College A Building</h2>
-					<p>
-						This project was done as part of one of our classes as groups. The main purpose of this project was to give the ability to transform a 2D CAD drawing into a 3D BIM model
-						and increase the ability to collaborate on a project. <br />
-						My group's section of the building has 2 storeys above grade and a basement. There are three entrances and staircases. On the ground floor, there is a Beauty and Spa Salon that covers coiffeur, mani-pedi, facial care and massage rooms.
-						There are classrooms and offices on the second floor.<br />
-						For modeling, AutoCAD files and Point Cloud file that was attached to Revit was used as references. The point cloud was showing that the building was located slightly different than the CAD drawings.
-						Thus, the model was placed in line with point cloud. The collaboration was done through<b> BIM 360</b> and <b>worksets</b>. The levels in Revit file wasn’t matching the AutoCAD levels. So, we adjusted the levels. <br />
-						<b>I was responsible of the foundations, superstructure and floors.</b>
-					</p>
-					<div class="row">
-						<div class="column">
-							<img src="images/mp1_pic_04.jpg" style="width:100%" onclick="openModalb();currentSlideb(1)" class="hover-shadow cursor">
-						</div>
-						<div class="column">
-							<img src="images/mp1_pic_01.jpg" style="width:100%" onclick="openModalb();currentSlideb(2)" class="hover-shadow cursor">
-						</div>
-						<div class="column">
-							<img src="images/mp1_pic_06.jpg" style="width:100%" onclick="openModalb();currentSlideb(3)" class="hover-shadow cursor">
-						</div>
-						<div class="column">
-							<img src="images/mp1_pic_05.jpg" style="width:100%" onclick="openModalb();currentSlideb(4)" class="hover-shadow cursor">
-						</div>
-						<div class="column">
-							<img src="images/mp1_pic_02.jpg" style="width:100%" onclick="openModalb();currentSlideb(5)" class="hover-shadow cursor">
-						</div>
-						<div class="column">
-							<img src="images/mp1_pic_03.jpg" style="width:100%" onclick="openModalb();currentSlideb(6)" class="hover-shadow cursor">
-						</div>
-					</div>
-
-					<div id="myModalb" class="modal">
-						<span class="close cursor" onclick="closeModalb()">&times;</span>
-						<div class="modal-content">
-
-							<div class="mySlidesb">
-								<div class="numbertext">1 / 6</div>
-								<img src="images/mp1_pic_04.jpg" style="width:100%">
-							</div>
-							<div class="mySlidesb">
-								<div class="numbertext">2 / 6</div>
-								<img src="images/mp1_pic_01.jpg" style="width:100%">
-							</div>
-							<div class="mySlidesb">
-								<div class="numbertext">3 / 6</div>
-								<img src="images/mp1_pic_06.jpg" style="width:100%">
-							</div>
-							<div class="mySlidesb">
-								<div class="numbertext">4 / 6</div>
-								<img src="images/mp1_pic_05.jpg" style="width:100%">
-							</div>
-							<div class="mySlidesb">
-								<div class="numbertext">5 / 6</div>
-								<img src="images/mp1_pic_02.jpg" style="width:100%">
-							</div>
-							<div class="mySlidesb">
-								<div class="numbertext">6 / 6</div>
-								<img src="images/mp1_pic_03.jpg" style="width:100%">
-							</div>
-							<a class="prev" onclick="plusSlidesb(-1)">&#10094;</a>
-							<a class="next" onclick="plusSlidesb(1)">&#10095;</a>
-
-
+						<h2>Algonquin College A Building</h2>
+						<p>
+							This project was done as part of one of our classes as groups. The main purpose of this project was to give the ability to transform a 2D CAD drawing into a 3D BIM model
+							and increase the ability to collaborate on a project. <br />
+							My group's section of the building has 2 storeys above grade and a basement. There are three entrances and staircases. On the ground floor, there is a Beauty and Spa Salon that covers coiffeur, mani-pedi, facial care and massage rooms.
+							There are classrooms and offices on the second floor.<br />
+							For modeling, AutoCAD files and Point Cloud file that was attached to Revit was used as references. The point cloud was showing that the building was located slightly different than the CAD drawings.
+							Thus, the model was placed in line with point cloud. The collaboration was done through<b> BIM 360</b> and <b>worksets</b>. The levels in Revit file wasn’t matching the AutoCAD levels. So, we adjusted the levels. <br />
+							<b>I was responsible of the foundations, superstructure and floors.</b>
+						</p>
+						<div class="row">
 							<div class="column">
-								<img class="demo cursor" src="images/mp1_pic_04.jpg" style="width:100%" onclick="currentSlideb(1)">
+								<img src="images/mp1_pic_04.jpg" style="width:100%" onclick="openModalb();currentSlideb(1)" class="hover-shadow cursor">
 							</div>
 							<div class="column">
-								<img class="demo cursor" src="images/mp1_pic_01.jpg" style="width:100%" onclick="currentSlideb(2)">
+								<img src="images/mp1_pic_01.jpg" style="width:100%" onclick="openModalb();currentSlideb(2)" class="hover-shadow cursor">
 							</div>
 							<div class="column">
-								<img class="demo cursor" src="images/mp1_pic_06.jpg" style="width:100%" onclick="currentSlideb(3)">
+								<img src="images/mp1_pic_06.jpg" style="width:100%" onclick="openModalb();currentSlideb(3)" class="hover-shadow cursor">
 							</div>
 							<div class="column">
-								<img class="demo cursor" src="images/mp1_pic_05.jpg" style="width:100%" onclick="currentSlideb(4)">
+								<img src="images/mp1_pic_05.jpg" style="width:100%" onclick="openModalb();currentSlideb(4)" class="hover-shadow cursor">
 							</div>
 							<div class="column">
-								<img class="demo cursor" src="images/mp1_pic_02.jpg" style="width:100%" onclick="currentSlideb(5)">
+								<img src="images/mp1_pic_02.jpg" style="width:100%" onclick="openModalb();currentSlideb(5)" class="hover-shadow cursor">
 							</div>
 							<div class="column">
-								<img class="demo cursor" src="images/mp1_pic_03.jpg" style="width:100%" onclick="currentSlideb(6)">
+								<img src="images/mp1_pic_03.jpg" style="width:100%" onclick="openModalb();currentSlideb(6)" class="hover-shadow cursor">
 							</div>
 						</div>
 
-					</div>
+						<div id="myModalb" class="modal">
+							<span class="close cursor" onclick="closeModalb()">&times;</span>
+							<div class="modal-content">
 
-					<script>
-						function rotation() {
+								<div class="mySlidesb">
+									<div class="numbertext">1 / 6</div>
+									<img src="images/mp1_pic_04.jpg" style="width:100%">
+								</div>
+								<div class="mySlidesb">
+									<div class="numbertext">2 / 6</div>
+									<img src="images/mp1_pic_01.jpg" style="width:100%">
+								</div>
+								<div class="mySlidesb">
+									<div class="numbertext">3 / 6</div>
+									<img src="images/mp1_pic_06.jpg" style="width:100%">
+								</div>
+								<div class="mySlidesb">
+									<div class="numbertext">4 / 6</div>
+									<img src="images/mp1_pic_05.jpg" style="width:100%">
+								</div>
+								<div class="mySlidesb">
+									<div class="numbertext">5 / 6</div>
+									<img src="images/mp1_pic_02.jpg" style="width:100%">
+								</div>
+								<div class="mySlidesb">
+									<div class="numbertext">6 / 6</div>
+									<img src="images/mp1_pic_03.jpg" style="width:100%">
+								</div>
+								<a class="prev" onclick="plusSlidesb(-1)">&#10094;</a>
+								<a class="next" onclick="plusSlidesb(1)">&#10095;</a>
 
-						}
-						function openModalb() {
-							document.getElementById("myModalb").style.display = "block";
-						}
 
-						function closeModalb() {
-							document.getElementById("myModalb").style.display = "none";
-						}
+								<div class="column">
+									<img class="demo cursor" src="images/mp1_pic_04.jpg" style="width:100%" onclick="currentSlideb(1)">
+								</div>
+								<div class="column">
+									<img class="demo cursor" src="images/mp1_pic_01.jpg" style="width:100%" onclick="currentSlideb(2)">
+								</div>
+								<div class="column">
+									<img class="demo cursor" src="images/mp1_pic_06.jpg" style="width:100%" onclick="currentSlideb(3)">
+								</div>
+								<div class="column">
+									<img class="demo cursor" src="images/mp1_pic_05.jpg" style="width:100%" onclick="currentSlideb(4)">
+								</div>
+								<div class="column">
+									<img class="demo cursor" src="images/mp1_pic_02.jpg" style="width:100%" onclick="currentSlideb(5)">
+								</div>
+								<div class="column">
+									<img class="demo cursor" src="images/mp1_pic_03.jpg" style="width:100%" onclick="currentSlideb(6)">
+								</div>
+							</div>
 
-						var slideIndexb = 1;
-						showSlidesb(slideIndexb);
+						</div>
 
-						function plusSlidesb(n) {
-							showSlidesb(slideIndexb += n);
-						}
+						<script>
+							function rotation() {
 
-						function currentSlideb(n) {
-							showSlidesb(slideIndexb = n);
-						}
-
-						function showSlidesb(n) {
-							var b;
-							var slidesb = document.getElementsByClassName("mySlidesb");
-							var dotsb = document.getElementsByClassName("demo");
-							if (n > slidesb.length) { slideIndexb = 1 }
-							if (n < 1) { slideIndexb = slidesb.length }
-							for (b = 0; b < slidesb.length; b++) {
-								slidesb[b].style.display = "none";
 							}
-							for (b = 0; b < dotsb.length; b++) {
-								dotsb[b].className = dotsb[b].className.replace(" active", "");
+							function openModalb() {
+								document.getElementById("myModalb").style.display = "block";
 							}
-							slidesb[slideIndexb - 1].style.display = "block";
-							dotsb[slideIndexb - 1].className += " active";
-						}
-					</script>
+
+							function closeModalb() {
+								document.getElementById("myModalb").style.display = "none";
+							}
+
+							var slideIndexb = 1;
+							showSlidesb(slideIndexb);
+
+							function plusSlidesb(n) {
+								showSlidesb(slideIndexb += n);
+							}
+
+							function currentSlideb(n) {
+								showSlidesb(slideIndexb = n);
+							}
+
+							function showSlidesb(n) {
+								var b;
+								var slidesb = document.getElementsByClassName("mySlidesb");
+								var dotsb = document.getElementsByClassName("demo");
+								if (n > slidesb.length) { slideIndexb = 1 }
+								if (n < 1) { slideIndexb = slidesb.length }
+								for (b = 0; b < slidesb.length; b++) {
+									slidesb[b].style.display = "none";
+								}
+								for (b = 0; b < dotsb.length; b++) {
+									dotsb[b].className = dotsb[b].className.replace(" active", "");
+								}
+								slidesb[slideIndexb - 1].style.display = "block";
+								dotsb[slideIndexb - 1].className += " active";
+							}
+						</script>
 
 
 
 					</section>
 
 					<section id="project2">
-					<h2>Class Project</h2>
-					<p>This project was done as part of one of the classes individually. Everything except the CAD drawings was modeled by me, from title blocks to the topography, schedules, creating new family, editing and adding to the project . </p>
+						<h2>Class Project</h2>
+						<p>This project was done as part of one of the classes individually. Everything except the CAD drawings was modeled by me, from title blocks to the topography, schedules, creating new family, editing and adding to the project . </p>
 
-					<div class="row">
-						<div class="column">
-							<img src="images/nico_01.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-						</div>
-						<div class="column">
-							<img src="images/nico_08.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-						</div>
-						<div class="column">
-							<img src="images/nico_02.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-						</div>
-						<div class="column">
-							<img src="images/nico_03.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-						</div>
-						<div class="column">
-							<img src="images/nico_04.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
-						</div>
-						<div class="column">
-							<img src="images/nico_05.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
-						</div>
-						<div class="column">
-							<img src="images/nico_06.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
-						</div>
-						<div class="column">
-							<img src="images/nico_07.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-						</div>
-					</div>
-					<div id="myModal" class="modal">
-						<span class="close cursor" onclick="closeModal()">&times;</span>
-						<div class="modal-content">
-							<div class="mySlides">
-								<div class="numbertext">1 / 8</div>
-								<img src="images/nico_01.jpg" style="width:100%">
-							</div>
-							<div class="mySlides">
-								<div class="numbertext">2 / 8</div>
-								<img src="images/nico_08.jpg" style="width:100%">
-							</div>
-							<div class="mySlides">
-								<div class="numbertext">3 / 8</div>
-								<img src="images/nico_02.jpg" style="width:100%">
-							</div>
-							<div class="mySlides">
-								<div class="numbertext">4 / 8</div>
-								<img src="images/nico_03.jpg" style="width:100%">
-							</div>
-							<div class="mySlides">
-								<div class="numbertext">5 / 8</div>
-								<img src="images/nico_04.jpg" style="width:100%">
-							</div>
-							<div class="mySlides">
-								<div class="numbertext">6 / 8</div>
-								<img src="images/nico_05.jpg" style="width:100%">
-							</div>
-							<div class="mySlides">
-								<div class="numbertext">7 / 8</div>
-								<img src="images/nico_06.jpg" style="width:100%">
-							</div>
-							<div class="mySlides">
-								<div class="numbertext">8 / 8</div>
-								<img src="images/nico_07.jpg" style="width:100%">
-							</div>
-							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-							<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+						<div class="row">
 							<div class="column">
-								<img class="demo cursor" src="images/nico_01.jpg" style="width:100%" onclick="currentSlide(1)">
+								<img src="images/nico_01.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
 							</div>
 							<div class="column">
-								<img class="demo cursor" src="images/nico_08.jpg" style="width:100%" onclick="currentSlide(2)">
+								<img src="images/nico_08.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
 							</div>
 							<div class="column">
-								<img class="demo cursor" src="images/nico_02.jpg" style="width:100%" onclick="currentSlide(3)">
+								<img src="images/nico_02.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
 							</div>
 							<div class="column">
-								<img class="demo cursor" src="images/nico_03.jpg" style="width:100%" onclick="currentSlide(4)">
+								<img src="images/nico_03.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
 							</div>
 							<div class="column">
-								<img class="demo cursor" src="images/nico_04.jpg" style="width:100%" onclick="currentSlide(5)">
+								<img src="images/nico_04.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
 							</div>
 							<div class="column">
-								<img class="demo cursor" src="images/nico_05.jpg" style="width:100%" onclick="currentSlide(6)">
+								<img src="images/nico_05.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
 							</div>
 							<div class="column">
-								<img class="demo cursor" src="images/nico_06.jpg" style="width:100%" onclick="currentSlide(7)">
+								<img src="images/nico_06.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
 							</div>
 							<div class="column">
-								<img class="demo cursor" src="images/nico_07.jpg" style="width:100%" onclick="currentSlide(8)">
+								<img src="images/nico_07.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
 							</div>
 						</div>
-					</div>
+						<div id="myModal" class="modal">
+							<span class="close cursor" onclick="closeModal()">&times;</span>
+							<div class="modal-content">
+								<div class="mySlides">
+									<div class="numbertext">1 / 8</div>
+									<img src="images/nico_01.jpg" style="width:100%">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">2 / 8</div>
+									<img src="images/nico_08.jpg" style="width:100%">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">3 / 8</div>
+									<img src="images/nico_02.jpg" style="width:100%">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">4 / 8</div>
+									<img src="images/nico_03.jpg" style="width:100%">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">5 / 8</div>
+									<img src="images/nico_04.jpg" style="width:100%">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">6 / 8</div>
+									<img src="images/nico_05.jpg" style="width:100%">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">7 / 8</div>
+									<img src="images/nico_06.jpg" style="width:100%">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">8 / 8</div>
+									<img src="images/nico_07.jpg" style="width:100%">
+								</div>
+								<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-					<script>
-						function rotation() {
+								<div class="column">
+									<img class="demo cursor" src="images/nico_01.jpg" style="width:100%" onclick="currentSlide(1)">
+								</div>
+								<div class="column">
+									<img class="demo cursor" src="images/nico_08.jpg" style="width:100%" onclick="currentSlide(2)">
+								</div>
+								<div class="column">
+									<img class="demo cursor" src="images/nico_02.jpg" style="width:100%" onclick="currentSlide(3)">
+								</div>
+								<div class="column">
+									<img class="demo cursor" src="images/nico_03.jpg" style="width:100%" onclick="currentSlide(4)">
+								</div>
+								<div class="column">
+									<img class="demo cursor" src="images/nico_04.jpg" style="width:100%" onclick="currentSlide(5)">
+								</div>
+								<div class="column">
+									<img class="demo cursor" src="images/nico_05.jpg" style="width:100%" onclick="currentSlide(6)">
+								</div>
+								<div class="column">
+									<img class="demo cursor" src="images/nico_06.jpg" style="width:100%" onclick="currentSlide(7)">
+								</div>
+								<div class="column">
+									<img class="demo cursor" src="images/nico_07.jpg" style="width:100%" onclick="currentSlide(8)">
+								</div>
+							</div>
+						</div>
 
-						}
-						function openModal() {
-							document.getElementById("myModal").style.display = "block";
-						}
+						<script>
+							function rotation() {
 
-						function closeModal() {
-							document.getElementById("myModal").style.display = "none";
-						}
-
-						var slideIndex = 1;
-						showSlidesc(slideIndex);
-
-						function plusSlides(n) {
-							showSlides(slideIndex += n);
-						}
-
-						function currentSlide(n) {
-							showSlides(slideIndex = n);
-						}
-
-						function showSlides(n) {
-							var c;
-							var slides = document.getElementsByClassName("mySlides");
-							var dots = 20;
-							if (n > slides.length) { slideIndex = 1 }
-							if (n < 1) { slideIndex = slides.length }
-							for (c = 0; c < slides.length; c++) {
-								slides[c].style.display = "none";
 							}
-							for (c = 0; c < dots.length; c++) {
-								dots[c].className = dots[c].className.replace(" active", "");
+							function openModal() {
+								document.getElementById("myModal").style.display = "block";
 							}
-							slides[slideIndex - 1].style.display = "block";
-							dots[slideIndex - 1].className += " active";
-						}
-					</script>
+
+							function closeModal() {
+								document.getElementById("myModal").style.display = "none";
+							}
+
+							var slideIndex = 1;
+							showSlidesc(slideIndex);
+
+							function plusSlides(n) {
+								showSlides(slideIndex += n);
+							}
+
+							function currentSlide(n) {
+								showSlides(slideIndex = n);
+							}
+
+							function showSlides(n) {
+								var c;
+								var slides = document.getElementsByClassName("mySlides");
+								var dots = 20;
+								if (n > slides.length) { slideIndex = 1 }
+								if (n < 1) { slideIndex = slides.length }
+								for (c = 0; c < slides.length; c++) {
+									slides[c].style.display = "none";
+								}
+								for (c = 0; c < dots.length; c++) {
+									dots[c].className = dots[c].className.replace(" active", "");
+								}
+								slides[slideIndex - 1].style.display = "block";
+								dots[slideIndex - 1].className += " active";
+							}
+						</script>
 
 
 
 					</section>
 					<section id="parameters">
-					<h2>Family Parameters</h2>
-					<p> It is very important to be able to customize the family parameters. But this can be very time consuming process. Using <b>Dynamo,</b> it's easy to automate this process. <br />
-						For the school assignment, I created custom nodes for this purpose that can be applied for any project. With these nodes it's easy to <b>pull family parameters,</b> list them and export these lists to an excel file. Or <b> change the values</b> of existing family parameters by pushing the data in an excel file to Revit. </p>
-					<a class="image fit"><img src="images/param_01.png"></a>
-					<a class="image fit"><img src="images/param_02.png"></a>
+						<h2>Family Parameters</h2>
+						<p>
+							It is very important to be able to customize the family parameters. But this can be very time consuming process. Using <b>Dynamo,</b> it's easy to automate this process. <br />
+							For the school assignment, I created custom nodes for this purpose that can be applied for any project. With these nodes it's easy to <b>pull family parameters,</b> list them and export these lists to an excel file. Or <b> change the values</b> of existing family parameters by pushing the data in an excel file to Revit.
+						</p>
+						<a class="image fit"><img src="images/param_01.png"></a>
+						<a class="image fit"><img src="images/param_02.png"></a>
 					</section>
 				</div>
 			</section>
@@ -517,22 +522,22 @@
 		<ul style="text-align:center; text-emphasis-color:black"> &#9742; (613) 889-2582 || &#9993; denizozyurt@gmail.com </ul>
 
 
-		</div>
-		<!-- Copyright -->
-		<div id="copyright">
-			<ul><li>&copy;</li><li>Design:HTML5 UP</li></ul>
-		</div>
+	</div>
+	<!-- Copyright -->
+	<div id="copyright">
+		<ul><li>&copy;</li><li>Design:HTML5 UP</li></ul>
+	</div>
 
 
 
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
-	</body>
+</body>
 </html>

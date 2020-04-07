@@ -13,21 +13,18 @@
 		display: none;
 		position: fixed;
 		bottom: 20px;
-		right: 200px;
+		right: 20px;
 		z-index: 99;
 		font-size: 50px;
 		border: none;
 		outline: none;
-		background-color: none;
-		color: #D6D6D6;
+		background-color: white;
+		color: dimgray;
 		cursor: pointer;
 		padding: 4px;
 		border-radius: 4px;
 	}
 
-		#myBtn:hover {
-			background-color: #D6D6D6;
-		}
 </style>
 
 <html>
@@ -40,7 +37,10 @@
 </head>
 <body class="is-preload">
 
-	<button onclick="topFunction()" id="myBtn" title="Go to top">&#8686;</button>
+	<ul class="actions">
+		<li><a onclick="topFunction()" id="myBtn" class="button icon solid solo fa-arrow-up scrolly" color="white"></a></li>
+	</ul>
+
 	<script>
 		//Get the button
 		var mybutton = document.getElementById("myBtn");
