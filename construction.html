@@ -151,6 +151,15 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
+    	#myBtn {
+		display: none;
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		z-index: 99;
+		color:white;
+	}
+
 </style>
 <html>
 
@@ -164,7 +173,7 @@
 
 <body class="is-preload">
     <ul class="actions">
-        <li><a onclick="topFunction()" id="myBtn" class="button icon solid solo fa-arrow-up scrolly" position="fixed; bottom: 20px right: 20px z-index: 99" color="white"></a></li>
+        <li><a onclick="topFunction()" id="myBtn" class="button icon solid solo fa-arrow-up scrolly" color="white"></a></li>
     </ul>
 
     <script>
@@ -243,7 +252,7 @@
                         </p>
                         <div class="row">
                             <div class="column">
-                                <img src="images/park_01.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                                <img src="images/park_01.jpg" style="width: 100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
                             </div>
 
                             <div class="column">
