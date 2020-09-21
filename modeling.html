@@ -69,7 +69,14 @@
 	    text-decoration: none;
 	    cursor: pointer;
 	}
-	
+    .mySlidesg {
+        display: none;
+    }
+
+    .mySlideswc {
+        display: none;
+    }
+
 	.mySlidesb {
 	    display: none;
 	}
@@ -230,16 +237,309 @@
 					</header>
 					<!-- Text stuff -->
 					<div id="main">
+						<section id="project0">
+							<h2>Sightseeing Tower</h2>
+							<p>
+								This building is the sightseeing tower of the Izmir Fair. The model was done by me from 2D CAD drawings.  <br />
+								The model consists of <b> structural model</b> and <b> architectural model</b>.<br />
+							</p>
+							<div class="row">
+								<div class="column">
+									<img src="images/gbl.jpg" style="width: 100% " onclick="openModalg();currentSlideg(1)" class="hover-shadow cursor">
+								</div>
+								<div class="column">
+									<img src="images/gbl1.jpg" style="width:100%" onclick="openModalg();currentSlideg(2)" class="hover-shadow cursor">
+								</div>
+								<div class="column">
+									<img src="images/gbl2.jpg" style="width:100%" onclick="openModalg();currentSlideg(3)" class="hover-shadow cursor">
+								</div>
+								<div class="column">
+									<img src="images/gbl3.jpg" style="width:100%" onclick="openModalg();currentSlideg(4)" class="hover-shadow cursor">
+								</div>
+								<div class="column">
+									<img src="images/gbl4.jpg" style="width:100%" onclick="openModalg();currentSlideg(5)" class="hover-shadow cursor">
+								</div>
+								<div class="column">
+									<img src="images/gbl5.jpg" style="width:100%" onclick="openModalg();currentSlideg(6)" class="hover-shadow cursor">
+								</div>
+								<div class="column">
+									<img src="images/gbl6.jpg" style="width:100%" onclick="openModalg();currentSlideg(7)" class="hover-shadow cursor">
+								</div>
+								<div class="column">
+									<img src="images/gbl7.jpg" style="width:100%" onclick="openModalg();currentSlideg(8)" class="hover-shadow cursor">
+								</div>
+								<div class="column">
+									<img src="images/gbl8.jpg" style="width:100%" onclick="openModalg();currentSlideg(9)" class="hover-shadow cursor">
+								</div>
+								<div class="column">
+									<img src="images/gbl9.jpg" style="width:100%" onclick="openModalg();currentSlideg(10)" class="hover-shadow cursor">
+								</div>
+
+							</div>
+
+							<div id="myModalg" class="modal">
+								<span class="close cursor" onclick="closeModalg()">&times;</span>
+								<div class="modal-content">
+
+									<div class="mySlidesg">
+										<div class="numbertext">1 / 10</div>
+										<img src="images/gbl.jpg" style="width:100%">
+									</div>
+									<div class="mySlidesg">
+										<div class="numbertext">2 / 10</div>
+										<img src="images/gbl1.jpg" style="width:100%">
+									</div>
+									<div class="mySlidesg">
+										<div class="numbertext">3 / 10</div>
+										<img src="images/gbl2.jpg" style="width:100%">
+									</div>
+									<div class="mySlidesg">
+										<div class="numbertext">4 / 10</div>
+										<img src="images/gbl3.jpg" style="width:100%">
+									</div>
+									<div class="mySlidesg">
+										<div class="numbertext">5 / 10</div>
+										<img src="images/gbl4.jpg" style="width:100%">
+									</div>
+									<div class="mySlidesg">
+										<div class="numbertext">6 / 10</div>
+										<img src="images/gbl5.jpg" style="width:100%">
+									</div>
+									<div class="mySlidesg">
+										<div class="numbertext">7 / 10</div>
+										<img src="images/gbl6.jpg" style="width:100%">
+									</div>
+									<div class="mySlidesg">
+										<div class="numbertext">8 / 10</div>
+										<img src="images/gb7.jpg" style="width:100%">
+									</div>
+									<div class="mySlidesg">
+										<div class="numbertext">9 / 10</div>
+										<img src="images/gbl8.jpg" style="width:100%">
+									</div>
+									<div class="mySlidesg">
+										<div class="numbertext">10 / 10</div>
+										<img src="images/gbl9.jpg" style="width:100%">
+									</div>
+
+									<a class="prev" onclick="plusSlidesg(-1)">&#10094;</a>
+									<a class="next" onclick="plusSlidesg(1)">&#10095;</a>
+
+
+									<div class="column">
+										<img class="demo cursor" src="images/gbl.jpg" style="width:100%" onclick="currentSlideg(1)">
+									</div>
+									<div class="column">
+										<img class="demo cursor" src="images/gbl1.jpg" style="width:100%" onclick="currentSlideg(2)">
+									</div>
+									<div class="column">
+										<img class="demo cursor" src="images/gbl2.jpg" style="width:100%" onclick="currentSlideg(3)">
+									</div>
+									<div class="column">
+										<img class="demo cursor" src="images/gbl3.jpg" style="width:100%" onclick="currentSlideg(4)">
+									</div>
+									<div class="column">
+										<img class="demo cursor" src="images/gbl4.jpg" style="width:100%" onclick="currentSlideg(5)">
+									</div>
+									<div class="column">
+										<img class="demo cursor" src="images/gbl5.jpg" style="width:100%" onclick="currentSlideg(6)">
+									</div>
+									<div class="column">
+										<img class="demo cursor" src="images/gbl6.jpg" style="width:100%" onclick="currentSlideg(7)">
+									</div>
+									<div class="column">
+										<img class="demo cursor" src="images/gbl7.jpg" style="width:100%" onclick="currentSlideg(8)">
+									</div>
+									<div class="column">
+										<img class="demo cursor" src="images/gbl8.jpg" style="width:100%" onclick="currentSlideg(9)">
+									</div>
+									<div class="column">
+										<img class="demo cursor" src="images/gbl9.jpg" style="width:100%" onclick="currentSlideg(10)">
+									</div>
+
+								</div>
+
+							</div>
+
+							<script>
+								function rotation() {
+
+								}
+								function openModalg() {
+									document.getElementById("myModalg").style.display = "block";
+								}
+
+								function closeModalg() {
+									document.getElementById("myModalg").style.display = "none";
+								}
+
+								var slideIndexg = 1;
+								showSlidesg(slideIndexg);
+
+								function plusSlidesg(n) {
+									showSlidesg(slideIndexg += n);
+								}
+
+								function currentSlideg(n) {
+									showSlidesg(slideIndexg = n);
+								}
+
+								function showSlidesg(n) {
+									var g;
+									var slidesg = document.getElementsByClassName("mySlidesg");
+									var dotsg = document.getElementsByClassName("demo");
+									if (n > slidesg.length) { slideIndexg = 1 }
+									if (n < 1) { slideIndexg = slidesg.length }
+									for (g = 0; g < slidesg.length; g++) {
+										slidesg[g].style.display = "none";
+									}
+									for (g = 0; g < dotsg.length; g++) {
+										dotsg[g].className = dotsg[g].className.replace(" active", "");
+									}
+									slidesg[slideIndexg - 1].style.display = "block";
+									dotsg[slideIndexg - 1].className += " active";
+								}
+							</script>
+
+
+
+						</section>
+						<section id="projectwc">
+							<h2>Public Restroom </h2>
+							<p>
+								This public restroom section is from Izmir Fair project. It was modeled by me including the M&P parts from 2D CAD drawings.  <br />
+								The model consists of <b>architectural</b> and <b>structural</b> models. For <b>Mechanical</b> and <b>Plumbing</b>, it has the <b> HVAC system </b> and <b> cold and hot water distrubution systems</b>.<br />
+							</p>
+							<div class="row">
+								<div class="column">
+									<img src="images/wc.jpg" style="width: 100% " onclick="openModalwc();currentSlidewc(1)" class="hover-shadow cursor">
+								</div>
+								<div class="column">
+									<img src="images/wc1.jpg" style="width:100%" onclick="openModalwc();currentSlidewc(2)" class="hover-shadow cursor">
+								</div>
+								<div class="column">
+									<img src="images/wc2.jpg" style="width:100%" onclick="openModalwc();currentSlidewc(3)" class="hover-shadow cursor">
+								</div>
+								<div class="column">
+									<img src="images/wc3.jpg" style="width:100%" onclick="openModalwc();currentSlidewc(4)" class="hover-shadow cursor">
+								</div>
+								<div class="column">
+									<img src="images/wc4.jpg" style="width:100%" onclick="openModalwc();currentSlidewc(5)" class="hover-shadow cursor">
+								</div>
+								<div class="column">
+									<img src="images/wc5.jpg" style="width:100%" onclick="openModalwc();currentSlidewc(6)" class="hover-shadow cursor">
+								</div>
+							</div>
+
+							<div id="myModalwc" class="modal">
+								<span class="close cursor" onclick="closeModalwc()">&times;</span>
+								<div class="modal-content">
+
+									<div class="mySlideswc">
+										<div class="numbertext">1 / 6</div>
+										<img src="images/wc.jpg" style="width:100%">
+									</div>
+									<div class="mySlideswc">
+										<div class="numbertext">2 / 6</div>
+										<img src="images/wc1.jpg" style="width:100%">
+									</div>
+									<div class="mySlideswc">
+										<div class="numbertext">3 / 6</div>
+										<img src="images/wc2.jpg" style="width:100%">
+									</div>
+									<div class="mySlideswc">
+										<div class="numbertext">4 / 6</div>
+										<img src="images/wc3.jpg" style="width:100%">
+									</div>
+									<div class="mySlideswc">
+										<div class="numbertext">5 / 6</div>
+										<img src="images/wc4.jpg" style="width:100%">
+									</div>
+									<div class="mySlideswc">
+										<div class="numbertext">6 / 6</div>
+										<img src="images/wc5.jpg" style="width:100%">
+									</div>
+
+									<a class="prev" onclick="plusSlideswc(-1)">&#10094;</a>
+									<a class="next" onclick="plusSlideswc(1)">&#10095;</a>
+
+
+									<div class="column">
+										<img class="demo cursor" src="images/wc.jpg" style="width:100%" onclick="currentSlidewc(1)">
+									</div>
+									<div class="column">
+										<img class="demo cursor" src="images/wc1.jpg" style="width:100%" onclick="currentSlidewc(2)">
+									</div>
+									<div class="column">
+										<img class="demo cursor" src="images/wc2.jpg" style="width:100%" onclick="currentSlidewc(3)">
+									</div>
+									<div class="column">
+										<img class="demo cursor" src="images/wc3.jpg" style="width:100%" onclick="currentSlidewc(4)">
+									</div>
+									<div class="column">
+										<img class="demo cursor" src="images/wc4.jpg" style="width:100%" onclick="currentSlidewc(5)">
+									</div>
+									<div class="column">
+										<img class="demo cursor" src="images/wc5.jpg" style="width:100%" onclick="currentSlidewc(6)">
+									</div>
+
+								</div>
+
+							</div>
+
+							<script>
+								function rotation() {
+
+								}
+								function openModalwc() {
+									document.getElementById("myModalwc").style.display = "block";
+								}
+
+								function closeModalwc() {
+									document.getElementById("myModalwc").style.display = "none";
+								}
+
+								var slideIndexwc = 1;
+								showSlideswc(slideIndexwc);
+
+								function plusSlideswc(n) {
+									showSlideswc(slideIndexwc += n);
+								}
+
+								function currentSlidewc(n) {
+									showSlideswc(slideIndexwc = n);
+								}
+
+								function showSlideswc(n) {
+									var wc;
+									var slideswc = document.getElementsByClassName("mySlideswc");
+									var dotswc = document.getElementsByClassName("demo");
+									if (n > slideswc.length) { slideIndexwc = 1 }
+									if (n < 1) { slideIndexwc = slideswc.length }
+									for (wc = 0; wc < slideswc.length; wc++) {
+										slideswc[wc].style.display = "none";
+									}
+									for (wc = 0; wc < dotswc.length; wc++) {
+										dotswc[wc].className = dotswc[wc].className.replace(" active", "");
+									}
+									slideswc[slideIndexwc - 1].style.display = "block";
+									dotswc[slideIndexwc - 1].className += " active";
+								}
+							</script>
+
+
+
+						</section>
 						<section id="project1">
 							<h2>Algonquin College A Building</h2>
 							<p>
-							This project was done as part of one of our classes as groups. The main purpose of this project was to give the ability to transform a 2D CAD drawing into a 3D BIM model
-							and increase the ability to collaborate on a project. <br />
-							My group's section of the building has 2 storeys above grade and a basement. There are three entrances and staircases. On the ground floor, there is a Beauty and Spa Salon that covers coiffeur, mani-pedi, facial care and massage rooms.
-							There are classrooms and offices on the second floor.<br />
-							For modeling, AutoCAD files and Point Cloud file that was attached to Revit was used as references. The point cloud was showing that the building was located slightly different than the CAD drawings.
-							Thus, the model was placed in line with point cloud. The collaboration was done through<b> BIM 360</b> and <b>worksets</b>. The levels in Revit file wasn’t matching the AutoCAD levels. So, we adjusted the levels. <br />
-							<b>I was responsible of the foundations, superstructure and floors.</b>
+								This project was done as part of one of our classes as groups. The main purpose of this project was to give the ability to transform a 2D CAD drawing into a 3D BIM model
+								and increase the ability to collaborate on a project. <br />
+								My group's section of the building has 2 storeys above grade and a basement. There are three entrances and staircases. On the ground floor, there is a Beauty and Spa Salon that covers coiffeur, mani-pedi, facial care and massage rooms.
+								There are classrooms and offices on the second floor.<br />
+								For modeling, AutoCAD files and Point Cloud file that was attached to Revit was used as references. The point cloud was showing that the building was located slightly different than the CAD drawings.
+								Thus, the model was placed in line with point cloud. The collaboration was done through<b> BIM 360</b> and <b>worksets</b>. The levels in Revit file wasn’t matching the AutoCAD levels. So, we adjusted the levels. <br />
+								<b>I was responsible of the foundations, superstructure and floors.</b>
 							</p>
 							<div class="row">
 								<div class="column">
@@ -330,7 +630,7 @@
 
 								var slideIndexb = 1;
 								showSlidesb(slideIndexb);
-	
+
 								function plusSlidesb(n) {
 									showSlidesb(slideIndexb += n);
 								}
@@ -457,7 +757,7 @@
 
 							<script>
 								function rotation() {
-									
+
 								}
 								function openModal() {
 									document.getElementById("myModal").style.display = "block";
@@ -466,14 +766,14 @@
 								function closeModal() {
 									document.getElementById("myModal").style.display = "none";
 								}
-								
+
 								var slideIndex = 1;
 								showSlidesc(slideIndex);
 
 								function plusSlides(n) {
 									showSlides(slideIndex += n);
 								}
-								
+
 								function currentSlide(n) {
 									showSlides(slideIndex = n);
 								}
@@ -497,11 +797,12 @@
 
 
 						</section>
+						<h2>Family Parameters</h2>
 						<section id="parameters">
 							<h2>Family Parameters</h2>
 							<p>
-							It is very important to be able to customize the family parameters. But this can be very time consuming process. Using <b>Dynamo,</b> it's easy to automate this process. <br />
-							For the school assignment, I created custom nodes for this purpose that can be applied for any project. With these nodes it's easy to <b>pull family parameters,</b> list them and export these lists to an excel file. Or <b> change the values</b> of existing family parameters by pushing the data in an excel file to Revit.
+								It is very important to be able to customize the family parameters. But this can be very time consuming process. Using <b>Dynamo,</b> it's easy to automate this process. <br />
+								For the school assignment, I created custom nodes for this purpose that can be applied for any project. With these nodes it's easy to <b>pull family parameters,</b> list them and export these lists to an excel file. Or <b> change the values</b> of existing family parameters by pushing the data in an excel file to Revit.
 							</p>
 							<a class="image fit"><img src="images/param_01.png"></a>
 							<a class="image fit"><img src="images/param_02.png"></a>
